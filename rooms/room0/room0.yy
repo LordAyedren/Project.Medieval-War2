@@ -96,7 +96,30 @@
             "userdefined_depth": false,
             "visible": true,
             "assets": [
-                
+                {
+                    "__type": "GMRSpriteGraphic_Model:#YoYoStudio.MVCFormat",
+                    "id": "60910f1e-ef46-4130-b999-4bd508045199",
+                    "modelName": "GMRSpriteGraphic",
+                    "mvc": "1.0",
+                    "ignore": false,
+                    "inheritItemSettings": false,
+                    "m_originalParentID": "00000000-0000-0000-0000-000000000000",
+                    "m_serialiseFrozen": false,
+                    "name": "graphic_E967AE3",
+                    "x": 768,
+                    "y": 320,
+                    "animationFPS": 15,
+                    "animationSpeedType": 0,
+                    "colour": {
+                        "Value": 4294967295
+                    },
+                    "frameIndex": 0,
+                    "rotation": 0,
+                    "scaleX": 1,
+                    "scaleY": 1,
+                    "spriteId": "74330774-84ef-48c5-ad0f-9759d1864510",
+                    "userdefined_animFPS": false
+                }
             ]
         },
         {
