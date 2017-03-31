@@ -13,3 +13,28 @@ for (xx = 0; xx < mapWidth; xx++) {
 		map[xx,yy] = instance_create_layer((xx * GRID_SIZE),(yy * GRID_SIZE), grid_layer, obj_grid_node);
 	}
 }
+
+
+//populate neightbors
+for (xx = 0; xx < mapWidth; xx++) {
+	for (yy=0;yy< mapHeight; yy++) {
+		node = map[xx,yy];
+		
+		if (xx > 0) {
+			ds_list_add(node.neighbors, map[(xx - 1), yy]);
+		}
+
+		if (xx < (mapWidth - 1)) {
+			ds_list_add(node.neighbors, map[(xx + 1), yy]);
+		}
+
+		if (yy > 0) {
+			ds_list_add(node.neighbors, map[xx, (yy -1)]);
+		}
+		
+		if (yy < (mapHeight - 1)) {
+			ds_list_add(node.neighbors, map[xx, yy + 1]);
+		}
+		
+	}
+}
